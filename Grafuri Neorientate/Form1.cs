@@ -19,7 +19,12 @@ namespace Grafuri_Neorientate
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            List<(int a, int b)> muchii = new List<(int a, int b)>();
+            muchii.Add((1, 2));
+            muchii.Add((2, 0));
+            muchii.Add((1, 0));
+            Graf g = new Graf(3, muchii);
+            Console.WriteLine(g.NrNoduri);
         }
     }
 }

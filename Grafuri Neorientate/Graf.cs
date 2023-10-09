@@ -11,17 +11,26 @@ namespace Grafuri_Neorientate
         int nrNoduri;
         List<List<int>> muchii;
 
+        public void Initializare()
+        {
+            for (int i = 0; i < nrNoduri; i++)
+                for (int j = 0; j < nrNoduri; j++)
+                    muchii[i].Add(0);
+        }
+
         //a) Constructor de initializare fara valori
         public Graf()
         {
             nrNoduri = 0;
             muchii = new List<List<int>>();
+            Initializare();
         }
 
         //Constructor de initializare cu valori
         public Graf(int _nrNoduri, List<(int n1, int n2)> _muchii)
         {
             muchii = new List<List<int>>();
+            Initializare();
             this.nrNoduri = _nrNoduri;
             _muchii.ForEach(muchie =>
             {
@@ -52,6 +61,10 @@ namespace Grafuri_Neorientate
         public string adiacenta(int nod)
         {
             return muchii[nod].ToString();
+        }
+
+        public static Graf oprator -(Graf G, int nod){
+            
         }
     }
 }
