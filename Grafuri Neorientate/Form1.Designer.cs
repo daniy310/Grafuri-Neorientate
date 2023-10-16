@@ -36,7 +36,7 @@ namespace Grafuri_Neorientate
             this.buttonAdiacenta = new System.Windows.Forms.Button();
             this.buttonMatriceaLanturilor = new System.Windows.Forms.Button();
             this.buttonEliminareNod = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonGrafComplementar = new System.Windows.Forms.Button();
             this.textBoxAdiacenta = new System.Windows.Forms.TextBox();
             this.textBoxEliminare = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -116,15 +116,16 @@ namespace Grafuri_Neorientate
             this.buttonEliminareNod.UseVisualStyleBackColor = true;
             this.buttonEliminareNod.Click += new System.EventHandler(this.buttonEliminareNod_Click);
             // 
-            // button2
+            // buttonGrafComplementar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(25, 372);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 66);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Graf complementar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonGrafComplementar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGrafComplementar.Location = new System.Drawing.Point(25, 372);
+            this.buttonGrafComplementar.Name = "buttonGrafComplementar";
+            this.buttonGrafComplementar.Size = new System.Drawing.Size(153, 66);
+            this.buttonGrafComplementar.TabIndex = 7;
+            this.buttonGrafComplementar.Text = "Graf complementar";
+            this.buttonGrafComplementar.UseVisualStyleBackColor = true;
+            this.buttonGrafComplementar.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBoxAdiacenta
             // 
@@ -149,7 +150,7 @@ namespace Grafuri_Neorientate
             this.ClientSize = new System.Drawing.Size(715, 450);
             this.Controls.Add(this.textBoxEliminare);
             this.Controls.Add(this.textBoxAdiacenta);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonGrafComplementar);
             this.Controls.Add(this.buttonEliminareNod);
             this.Controls.Add(this.buttonMatriceaLanturilor);
             this.Controls.Add(this.buttonAdiacenta);
@@ -175,7 +176,7 @@ namespace Grafuri_Neorientate
         private System.Windows.Forms.Button buttonAdiacenta;
         private System.Windows.Forms.Button buttonMatriceaLanturilor;
         private System.Windows.Forms.Button buttonEliminareNod;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonGrafComplementar;
         private System.Windows.Forms.TextBox textBoxAdiacenta;
         private System.Windows.Forms.TextBox textBoxEliminare;
     }

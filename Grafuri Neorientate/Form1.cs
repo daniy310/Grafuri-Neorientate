@@ -90,12 +90,12 @@ namespace Grafuri_Neorientate
 
         private void buttonEliminareNod_Click(object sender, EventArgs e)
         {
-            if (textBoxAdiacenta.Text == "")
+            if (textBoxEliminare.Text == "")
             {
                 textBox.Text = "Introduceti un nod valabil !";
                 return;
             }
-            int n = Convert.ToInt32(textBoxAdiacenta.Text);
+            int n = Convert.ToInt32(textBoxEliminare.Text);
             if (n > g.NrNoduri)
             {
                 textBox.Text = "Introduceti un nod valabil !";
@@ -104,6 +104,11 @@ namespace Grafuri_Neorientate
 
             g = new Graf(g - 3);
             textBox.Text = g.afisare();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
