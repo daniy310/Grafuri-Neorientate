@@ -17,6 +17,8 @@ namespace Grafuri_Neorientate
             InitializeComponent();
         }
 
+        Graf g;
+
         private void Form1_Load(object sender, EventArgs e)
         {
             List<(int a, int b)> muchii = new List<(int a, int b)>();
@@ -25,7 +27,7 @@ namespace Grafuri_Neorientate
             muchii.Add((1, 3));
             muchii.Add((4, 3));
             muchii.Add((1, 4));
-            Graf g = new Graf(5, muchii);
+            g = new Graf(5, muchii);
             Console.WriteLine("Afisare numar noduri");
             Console.WriteLine(g.NrNoduri);
 
@@ -46,6 +48,26 @@ namespace Grafuri_Neorientate
             Graf i = new Graf (~g);
             Console.WriteLine("Afisare graf complementar");
             Console.WriteLine(i.afisare());
+        }
+
+        private void buttonCitire_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAfisare_Click(object sender, EventArgs e)
+        {
+            textBox.Text = g.afisare();
+        }
+
+        private void buttonNrNoduri_Click(object sender, EventArgs e)
+        {
+            textBox.Text = g.NrNoduri.ToString();
+        }
+
+        private void buttonAdiacenta_Click(object sender, EventArgs e)
+        {
+            if()
         }
     }
 }
