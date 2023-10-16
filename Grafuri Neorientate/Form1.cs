@@ -67,7 +67,43 @@ namespace Grafuri_Neorientate
 
         private void buttonAdiacenta_Click(object sender, EventArgs e)
         {
-            if()
+            if (textBoxAdiacenta.Text == "")
+            {
+                textBox.Text = "Introduceti un nod valabil !";
+                return;
+            }
+            int n = Convert.ToInt32(textBoxAdiacenta.Text);
+            if(n > g.NrNoduri)
+            {
+                textBox.Text = "Introduceti un nod valabil !";
+                return;
+            }
+
+            textBox.Text = g.adiacenta(n);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Graf lanturi = g.matriceaLanturilor(g);
+            textBox.Text = lanturi.afisare();
+        }
+
+        private void buttonEliminareNod_Click(object sender, EventArgs e)
+        {
+            if (textBoxAdiacenta.Text == "")
+            {
+                textBox.Text = "Introduceti un nod valabil !";
+                return;
+            }
+            int n = Convert.ToInt32(textBoxAdiacenta.Text);
+            if (n > g.NrNoduri)
+            {
+                textBox.Text = "Introduceti un nod valabil !";
+                return;
+            }
+
+            g = new Graf(g - 3);
+            textBox.Text = g.afisare();
         }
     }
 }

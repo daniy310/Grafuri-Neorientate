@@ -34,7 +34,7 @@ namespace Grafuri_Neorientate
             this.buttonAfisare = new System.Windows.Forms.Button();
             this.buttonNrNoduri = new System.Windows.Forms.Button();
             this.buttonAdiacenta = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonMatriceaLanturilor = new System.Windows.Forms.Button();
             this.buttonEliminareNod = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBoxAdiacenta = new System.Windows.Forms.TextBox();
@@ -94,15 +94,16 @@ namespace Grafuri_Neorientate
             this.buttonAdiacenta.UseVisualStyleBackColor = true;
             this.buttonAdiacenta.Click += new System.EventHandler(this.buttonAdiacenta_Click);
             // 
-            // button1
+            // buttonMatriceaLanturilor
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(25, 245);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 57);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Matricea lanturilor";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonMatriceaLanturilor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMatriceaLanturilor.Location = new System.Drawing.Point(25, 245);
+            this.buttonMatriceaLanturilor.Name = "buttonMatriceaLanturilor";
+            this.buttonMatriceaLanturilor.Size = new System.Drawing.Size(153, 57);
+            this.buttonMatriceaLanturilor.TabIndex = 5;
+            this.buttonMatriceaLanturilor.Text = "Matricea lanturilor";
+            this.buttonMatriceaLanturilor.UseVisualStyleBackColor = true;
+            this.buttonMatriceaLanturilor.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonEliminareNod
             // 
@@ -113,6 +114,7 @@ namespace Grafuri_Neorientate
             this.buttonEliminareNod.TabIndex = 6;
             this.buttonEliminareNod.Text = "Eliminare nodul :";
             this.buttonEliminareNod.UseVisualStyleBackColor = true;
+            this.buttonEliminareNod.Click += new System.EventHandler(this.buttonEliminareNod_Click);
             // 
             // button2
             // 
@@ -149,7 +151,7 @@ namespace Grafuri_Neorientate
             this.Controls.Add(this.textBoxAdiacenta);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonEliminareNod);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonMatriceaLanturilor);
             this.Controls.Add(this.buttonAdiacenta);
             this.Controls.Add(this.buttonNrNoduri);
             this.Controls.Add(this.buttonAfisare);
@@ -171,7 +173,7 @@ namespace Grafuri_Neorientate
         private System.Windows.Forms.Button buttonAfisare;
         private System.Windows.Forms.Button buttonNrNoduri;
         private System.Windows.Forms.Button buttonAdiacenta;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonMatriceaLanturilor;
         private System.Windows.Forms.Button buttonEliminareNod;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBoxAdiacenta;
